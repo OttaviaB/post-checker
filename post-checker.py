@@ -90,15 +90,15 @@ class Mail:
             print('Message Id: %s' % message['id'])
             return message
         except errors.HttpError as err:
-            print(f'An error occurred: {err}s')
+            print('An error occurred: {}'.format(err))
 
 
 def main():
-    website = r"url-for-list-of-post"
-    name = "name-of-recipient-here"
+    website = r""  # url
+    name = "" # name to search for on the website
 
-    sender = 'your-gmail-address'
-    to = 'the-addres-to-be-notified'
+    sender = ''  # your gmail address
+    to = ''  # email address
     subject = 'PostChecker'
     message_text = 'Your package has arrived.'
 
